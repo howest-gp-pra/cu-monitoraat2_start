@@ -50,7 +50,33 @@ In de class library zijn 4 mappen aanwezig :
       * Indien geen naam meegegeven wordt dient een fout opgegooid te worden.  
       * Indien de geboortedatum kleiner is dan 1/1/1920 wordt deze automatisch aangepast naar 1/1/1920.  Is de opgegeven waarde groter dan vandaag, dan wordt deze automatisch aangepast naar vandaag.    
       * De eigenschap AgenInYears (leeftijd uitgedrukt in jaren) is readonly en is het resultaat van een berekening op basis van de geboortedatum.  
-      * Een persoon kan meerdere e-mail adressen hebben : deze worden bijgehouden als een List van strings (= compositie).
-      * Een persoon kan meerdere adressen hebben : deze worden bijgehouden als een List van Address objecten (= compositie).
+      * Een persoon kan meerdere e-mail adressen hebben : deze worden bijgehouden als een List van strings (= compositie).  Deze List mag enkel binnen deze klasse geïnstantieeerd kunnen worden.  
+      * Een persoon kan meerdere adressen hebben : deze worden bijgehouden als een List van Address objecten (= compositie).  Deze List mag enkel binnen deze klasse geïnstantieeerd kunnen worden.  
+    
+    De klasse heeft 2 constructors :  
+      * versie 1 ontvangt volgende waarden : naam, geboortedatum, telefoon, geslacht (optioneel)  
+      * versie 2 ontvangt volgende waarden : naam, geboortedatum, telefoon, moedertaal, geslacht (optioneel)  
+    Maak gebruik van constructor chaining !    
+    
+    De klasse overschrijft de ToString en geeft in de plaats gewoon de naam van de persoon.  
+    
+    De klasse moet (volgens de Interface) ook voorzien in een methode ShowDetails die een string retourneert.   
+    Deze methode bouwt a.d.h.v. de eigenschappen volgende tekst op : 
+    
+    > Ella Fitzgerald 
+    > Geboortedatum : 1/1/2000
+    > Leeftijd : 21 jaar
+    > Geslacht : vrouw
+    > Moedertaal : nederlands
+    > Telefoon : 0497123456
+    > Email #1 : ella@fitzgerald.be
+    > Email #2 : ella@hotmail.com
+    > Adres #1 : (resultaat van Address ToString)
+    > Adres #2 : (resultaat van Address ToString)
+    
+    Deze methode moet kunnen overschreven worden door afgeleide klassen.
+    
+    
+    
     
   * 
