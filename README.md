@@ -107,5 +107,7 @@ In de class library zijn 4 mappen aanwezig :
     
 ### Code behind
 
-Voor de code behind verwijs ik naar de demo hieronder : 
+Voor de code behind verwijs ik naar de demo hieronder :   
+
+![demo](assets/demo.gif)
 
