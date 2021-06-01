@@ -33,7 +33,7 @@ In de class library zijn 4 mappen aanwezig :
       * IPersonService : deze interface beschrijft 1 (read only) eigenschap en 2 methoden en zal straks geïmplementeerd worden door de service klasse PersonService (zie verder)
   * Entities   
     In deze map zitten 4 bestanden (entiteitsklassen) (die nog volledig dienen ingevuld te worden) :   
-    * Address   
+    * **Address**   
       Deze klasse beschrijft een adres en dient volgende members te krijgen :   
         * Eigenschappen (eenvoudige props, geen controle vereist) :   
           * prop Street (string)  
@@ -43,7 +43,7 @@ In de class library zijn 4 mappen aanwezig :
           * AddressType (enumeratietype AddressType)
         * 1 constructor die evenveel waarden als props ontvangt  
         * Overschrijft de ToString en toont  adrestype : straat, huisnummer - postocde gemeente - land
-  * Person  
+  * **Person**  
     Dit is een basisklasse waarvan geen instanties van mogen gemaakt worden.  
     De klasse implementeert de IPerson interface.  Je maakt de props aan zoals de Interface opgeeft.  
     Bijkomende info : 
@@ -60,23 +60,31 @@ In de class library zijn 4 mappen aanwezig :
     
     De klasse overschrijft de ToString en geeft in de plaats gewoon de naam van de persoon.  
     
-    De klasse moet (volgens de Interface) ook voorzien in een methode ShowDetails die een string retourneert.   
+    De klasse moet (volgens de Interface) ook voorzien in een methode **ShowDetails** die een string retourneert.   
     Deze methode bouwt a.d.h.v. de eigenschappen volgende tekst op : 
     
-    > Ella Fitzgerald 
-    > Geboortedatum : 1/1/2000
-    > Leeftijd : 21 jaar
-    > Geslacht : vrouw
-    > Moedertaal : nederlands
-    > Telefoon : 0497123456
-    > Email #1 : ella@fitzgerald.be
-    > Email #2 : ella@hotmail.com
-    > Adres #1 : (resultaat van Address ToString)
-    > Adres #2 : (resultaat van Address ToString)
+    > Ella Fitzgerald   
+    > Geboortedatum : 1/1/2000  
+    > Leeftijd : 21 jaar  
+    > Geslacht : vrouw  
+    > Moedertaal : nederlands  
+    > Telefoon : 0497123456  
+    > Email #1 : ella@fitzgerald.be  
+    > Email #2 : ella@hotmail.com  
+    > Adres #1 : (resultaat van Address ToString)  
+    > Adres #2 : (resultaat van Address ToString)  
+      
+    Deze methode moet kunnen overschreven worden door afgeleide klassen.    
     
-    Deze methode moet kunnen overschreven worden door afgeleide klassen.
+  * **Staff**  
+    Deze klasse erft over van **Person** en implementeert de **IStaff interface**   
+    Implementeer de bijkomende props van de Interface (er zijn geen bijkomende voorwaarden).  
+    Zorg dat er constructors zijn om de constructors uit de basisklasse van de nodige waarden te voorzien.  
+    De klasse overschrijft de **ShowDetails** methode van de basisklassen maakt er het volgende van :   
     
-    
-    
-    
+    > STAFF  
+    > (het resultaat van de ShowDetails() methode van de basisklasse)  
+    > Functie : kader  
+    > Diploma : Niveau4  
+      
   * 
