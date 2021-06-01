@@ -87,4 +87,21 @@ In de class library zijn 4 mappen aanwezig :
     > Functie : kader  
     > Diploma : Niveau4  
       
-  * 
+  * **Student**  
+    Deze klasse erft over van **Person** en implementeert de **IStudent interface**  
+    Implementeer de bijkomende prop van de Interface (er zijn geen bijkomende voorwaarden).  
+    Zorg dat er constructors zijn om de constructors uit de basisklasse van de nodige waarden te voorzien.  
+    De klasse overschrijft de **ShowDetails** methode van de basisklassen maakt er het volgende van :   
+    
+    > STUDENT  
+    > (het resultaat van de ShowDetails() methode van de basisklasse)  
+    > Diploma : Niveau5   
+   
+  * Services   
+    Er bevindt zich 1 (service) klasse in deze map : **PersonService**   
+    Deze klasse implementeert de IPersonService interface  
+    Implementeer de prop en de methoden die de interface oplegt.   
+    In de (argumentloze) constructor zorg je voor seeding.   
+    De verplichte methode GetPersonTypes retourneert een collectie van Type objecten (insanties van de .Net klasse Type).  Je maakt deze collectie aan door je collectie van Persons te doorlopen en elke type (in ons geval dus Staff en Student) toe te voegen aan deze collectie die je dan tenslotte retourneert.   
+    De verplichte methode GetPersonsPerType zal dan uiteraard enkel de personen uit onze collectie Persons halen die van hetzelfde type zijn als het argument dat wordt aangeleverd.  
+    
